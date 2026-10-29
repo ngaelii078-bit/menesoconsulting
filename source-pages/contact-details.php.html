@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="no-js" xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+<title>Contact Details for Meneso Consulting in Kimberley, Northern Cape</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="animate.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i|Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/combination.js"></script>
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="Meneso Consulting"/>
+<meta name="msapplication-TileColor" content="#0054a6" />
+<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
+
+
+<script>
+$(document).ready(function(){
+
+var locations = [
+
+
+{
+city: "Meneso Consulting",
+coords: [-28.710380, 24.712436],
+popupText: "<img src='https://www.menesoconsulting.co.za/map-profile.jpg'><div class='popup-desc'><strong>Meneso Consulting</strong><br /> 89 Barkly Road, Westend Kimberley, 8345, Northern Cape, South Africa</div>"
+}
+
+
+];
+
+
+
+
+  var map = L.map('map', {scrollWheelZoom:false}).setView([-28.710380, 24.712436], 12);  
+
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	maxZoom: 19
+	
+  }).addTo(map);
+
+  var customIcon = L.icon({
+    iconUrl: 'https://www.menesoconsulting.co.za/img/map_icon_pin.svg',
+    iconSize: [25, 35],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowUrl: '',
+  });
+
+
+  var markers = {};
+
+  locations.forEach(function(location) {
+    var marker = L.marker(location.coords, { icon: customIcon }).addTo(map);
+    marker.bindPopup(location.popupText);
+    markers[location.city] = marker; 
+  });
+
+
+
+});
+</script>
+
+
+
+<style>
+
+.mini-osm { position:relative; display: flex; }
+
+#map { height: 450px; width: 100%; position: relative; }
+
+/* Overriding Leaflet popup styles
+====================== */
+
+/* Remove popup shadow */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { box-shadow: none !important; }
+
+/*.leaflet-container { filter: hue-rotate(81deg) invert(1); }*/
+.leaflet-container { filter: hue-rotate(0deg); }
+
+.leaflet-left { left: auto; right: 15px; }
+
+.leaflet-popup-content-wrapper { padding:0;}
+.leaflet-popup-content {  filter: hue-rotate(0deg); width: 210px; margin: 0 0 0 0; line-height: 1.3; font-size: 13px; font-size: 1.08333em; min-height: 1px; font-family: "Roboto", sans-serif;  }
+.leaflet-popup-content strong { font-family: "Roboto", sans-serif; font-size:14px; font-weight:700;}
+.leaflet-popup-content .popup-desc { padding: 10px; }
+.leaflet-popup-content .popup-desc .popup-btn { display: block; padding: 6px; width: 100%; text-align: center; background: #3333331c; color: #000; text-decoration: none; margin: 10px auto 0 auto; border-radius: 3px; font-size: 12px; line-height: 1.3; transition: all ease 0.1s; }
+.leaflet-popup-content .popup-desc .popup-btn:hover { background: #333; color: #fff; }
+.leaflet-popup-content img { width: 100%; height: 100px; object-fit: cover; margin-bottom: 0; border-radius: 10px 10px 0 0; }
+.leaflet-container a.leaflet-popup-close-button { width: 24px; height: 24px; padding: 0; display: flex; align-items: center; justify-content: center; background: #fff; color #222; top: 5px; right: 5px; border-radius: 100%; font-size: 19px; font-family: "Inter", sans-serif; }
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+
+.mini-osm { flex-direction: column; }
+#sidebar { position: relative; width: 100%; order: 2; }
+
+
+}
+
+
+
+</style>
+
+
+
+</head>
+
+<body id="con">
+
+
+<div class="header-wrapper">
+
+<h1>Meneso Consulting Contact Details</h1>
+
+<div class="header">
+<a class="logo" href="https://www.menesoconsulting.co.za"></a>
+
+<div class="menu_wrapper">
+
+
+	<div id="menu-icon">Menu</div>
+	
+    <div class="table">
+	<ul id="menu">
+        <li><a class="hom" href="index.php">Home <span>To Meneso Consulting</span></a></li>
+        <li><a class="pg2" href="about-us.php">About Us <span>Learn more</span></a></li>          
+        <li><a class="pg3" href="services.php">Services <span>What we offer</span></a></li>          
+        <li><a class="pg4" href="gallery.php">Gallery <span>Work in action</span></a></li>          
+        <li><a class="con" href="contact-details.php">Contact us <span>Get in touch</span></a></li>        
+	</ul>
+	</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<div class="static-slideshow" style="background-image:url(slide-contact-us.jpg)">
+
+
+<div class="title_box">
+	<h2>Contact us</h2>
+    <h3>Kindly see our contact details below or call us directly now on +27 82 541 0241</h3>
+</div>
+
+
+</div>
+
+
+
+
+<div class="container">
+
+<div class="spacer"></div>
+
+
+
+
+<div class="one_third">
+
+<div class="mini-osm">
+	<div id="map"></div>
+</div>
+
+</div>
+
+
+
+
+<div class="two_third">
+
+<h4>Contact Details:</h4>
+
+<p><strong>Cell:</strong> <a href="tel:+27 82 541 0241">+27 82 541 0241</a><br />
+<strong>Cell:</strong> <a href="tel:+27 53 872 9013">+27 53 872 9013</a><br />
+<strong>Email:</strong> <a href="mailto:menesoconsulting@gmail.com">menesoconsulting@gmail.com</a><br />
+<strong>Email:</strong> <a href="mailto:info@menesoconsulting.co.za">info@menesoconsulting.co.za</a>
+</p>
+
+
+<h4 style="margin-top:30px">Physical Address:</h4>
+
+<p>89 Barkly Road,<br />
+Westend Kimberley,<br />
+8345</p>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+<div class="container" style="background-color:#f5f5f5">
+
+<div id="reservations" style="position:absolute; top:-100px; opacity:0; visibility:hidden"></div>
+
+
+<div class="title_box formtitle" style="margin-bottom:0px;">
+	<h2>Ask for a Quotation:</h2>
+	<h3>Kindly fill in the form below and we will get back to you as soon as possible</h3>
+</div>
+
+
+
+<form method="post" action="form-process.php" name="contactform" id="contactform" class="contactform">
+
+
+<div class="fieldleft">
+<label for="name" class="field_required" accesskey="U">Name</label>
+<input name="name" type="text" id="name" size="30" class="name" />
+</div>
+
+<div class="fieldright">
+<label for="email" class="field_required" accesskey="E">Email</label>
+<input name="email" type="text" id="email" size="30" class="email" />
+</div>
+
+<div class="fieldleft">
+<label for="phone" class="field_required" accesskey="P">Contact Number:</label>
+<input name="phone" type="text" id="phone" size="30" class="phone" />
+</div>
+
+<div class="fieldright">
+<label for="physicaladdress" class="field_required" accesskey="P">Physical Address:</label>
+<input name="physicaladdress" type="text" id="physicaladdress" size="30" class="physicaladdress" />
+</div>
+
+
+
+<div class="clearfix"></div>        
+
+
+
+
+<label for="comments" accesskey="C">Quotation for:</label>
+<textarea name="comments" rows="5" id="comments" class="comments" /></textarea>
+
+<p class="field_required">Type the validation code in below</p>
+
+<label for="verify" accesskey="V">
+<img id="captcha" class="captcha_image" src="image.php" alt="Image verification" border="0"/>
+<br /><a style="cursor:pointer; font-size:14px;" id="reload">Refresh <b>verification code</b></a>
+</label>
+<input name="verify" type="text" id="verify" class="verify" size="6" value="" /><br />
+<div class="message"></div>
+<input type="submit" class="submit" value="Send it!" />
+
+</form>
+
+
+
+
+
+<div class="clearfix"></div>
+</div>
+
+
+<div class="clearfix"></div>
+
+
+
+
+
+
+
+<div class="download">
+<div style="position:relative; max-width:1000px; margin:0 auto">
+<p>
+<b>Request A Quotation</b>
+<span>Give us a call or fill in our online form for a quote</span></p>
+<a class="button" href="contact-details.php">Click Here</a>
+
+</div>
+</div>
+
+
+
+
+
+<div id="footer">
+<div class="row">
+
+
+
+<div class="third" style="text-align:center">
+
+<img src="logo.png">
+<br /><br />
+<p style="text-align:justify">Mechanical Engineering | Electrical Engineering | Civil Engineering | Construction | Air-Conditioning | Refrigeration | Plumbing Services | Steel Works & Plumbing</p>
+
+<p style="font-style:italic; font-weight:800; background:#ff1d00; color:#fff; display:inline-block; border-radius:5px; padding:5px 15px;">~ 15+ Years Experience ~</p>
+
+<p>
+<a class="facebook" href="https://www.facebook.com/menesoconsulting/" target="_blank"></a>
+
+</p>
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="third">
+
+<h6>Get in Touch:</h6>
+
+<p><strong>Cell:</strong> <a href="tel:+27 82 541 0241">+27 82 541 0241</a><br />
+<strong>Cell:</strong> <a href="tel:+27 53 872 9013">+27 53 872 9013</a><br />
+<strong>Email:</strong> <a href="mailto:menesoconsulting@gmail.com">menesoconsulting@gmail.com</a><br />
+<strong>Email:</strong> <a href="mailto:info@menesoconsulting.co.za">info@menesoconsulting.co.za</a>
+</p>
+
+<h6>Physical Address:</h6>
+
+<p>89 Barkly Road,<br />
+Westend Kimberley,<br />
+8345</p>
+
+<img style="width:150px; height:auto" src="bbee-logo.png" />
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="third">
+
+<h6>Navigation</h6>
+
+<ul>
+
+        <li><a class="hom" href="index.php">Home <span>To Meneso Consulting</span></a></li>
+        <li><a class="pg2" href="about-us.php">About Us <span>Learn more</span></a></li>          
+        <li><a class="pg3" href="services.php">Services <span>What we offer</span></a></li>          
+        <li><a class="pg4" href="gallery.php">Gallery <span>Work in action</span></a></li>          
+        <li><a class="con" href="contact-details.php">Contact us <span>Get in touch</span></a></li>        
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div class="clearfix"></div>
+
+
+
+
+
+
+</div>
+</div>
+
+<div class="credits">
+
+&copy; All rights reserved, <script>document.write(new Date().getFullYear())</script>, Meneso Consulting, www.menesoconsulting.co.za
+<div class="miniwebs">Developed by <a href="http://www.miniwebs.co.za" target="_blank"><img src="miniwebs.svg" onerror="this.src='miniwebs.png'">Miniwebs</a></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="contact_bar">
+	<a class="callus" href="tel:+27 82 541 0241"><span></span></a>
+    <a class="reservations" href="contact-details.php#reservations" target="_blank">Request A Quotation</a>
+</div>
+
+<div class="mobile-call-us"><a href="tel:+27 82 541 0241">Call us now</a></div>
+<div class="scrollToTop"></div>
+
+
+
+
+
+</body>
+</html>
